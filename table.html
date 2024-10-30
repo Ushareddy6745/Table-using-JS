@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Take Input of username from the user and show it in the h1 tag -->
+<!-- create a table with columns s.no and name and insert 5 records into it using dom methods -->
+
+    <script>
+        //h1 tag
+        let h1=document.createElement("h1")
+        document.body.appendChild(h1)
+        console.log(h1)
+        h1.setAttribute("id","ele")
+        document.getElementById("ele")
+
+        let username=prompt("Enter the Username: ")
+        h1.innerText=`Hello ${username}`
+
+        //creating table
+        let table=document.createElement("table")
+        document.body.appendChild(table)
+        document.getElementsByTagName("table")[0]
+        console.log(table)
+
+        table.style.border="1px solid black"
+        table.style.padding="10px"
+        //row-1
+        let row1=document.createElement("tr")
+        table.appendChild(row1)
+       
+
+        let head1=document.createElement("th")
+        row1.appendChild(head1)
+        head1.innerText="S.No"
+
+        
+        let head2=document.createElement("th")
+        row1.appendChild(head2)
+         head2.innerText="Name"
+
+        
+        let head3=document.createElement("th")
+        row1.appendChild(head3)
+        head3.innerText="MobileNo"
+        
+        let head4=document.createElement("th")
+        row1.appendChild(head4)
+         head4.innerText="Gender"
+
+        
+        let head5=document.createElement("th")
+        row1.appendChild(head5)
+         head5.innerText="email"
+ 
+        //row2
+        
+        let row2=document.createElement("tr")
+        table.appendChild(row2)
+
+        let data1=document.createElement("td")
+        row2.appendChild(data1)
+        data1.innerText="1"
+
+        
+        let data2=document.createElement("td")
+        row2.appendChild(data2)
+         data2.innerText="Usha"
+
+        
+        let data3=document.createElement("td")
+        row2.appendChild(data3)
+        data3.innerText="12345"
+        
+        let data4=document.createElement("td")
+        row2.appendChild(data4)
+         data4.innerText="F"
+
+        
+        let data5=document.createElement("td")
+        row2.appendChild(data5)
+        data5.innerText="usha@gmail.com"
+        
+        //row3
+
+        let row3=document.createElement("tr")
+        table.appendChild(row3)
+
+        let data11=document.createElement("td")
+        row3.appendChild(data11)
+        data11.innerText="2"
+
+        
+        let data12=document.createElement("td")
+        row3.appendChild(data12)
+         data12.innerText="Ash"
+
+        
+        let data13=document.createElement("td")
+        row3.appendChild(data13)
+        data13.innerText="56789"
+        
+        let data14=document.createElement("td")
+        row3.appendChild(data14)
+         data14.innerText="F"
+
+        
+        let data15=document.createElement("td")
+        row3.appendChild(data15)
+        data15.innerText="ash@gmail.com"
+
+        //row4
+        let row4=document.createElement("tr")
+        table.appendChild(row4)
+
+        let data21=document.createElement("td")
+        row4.appendChild(data21)
+        data21.innerText="3"
+
+        
+        let data22=document.createElement("td")
+        row4.appendChild(data22)
+         data22.innerText="Jay"
+
+        
+        let data23=document.createElement("td")
+        row4.appendChild(data23)
+        data23.innerText="12345"
+        
+        let data24=document.createElement("td")
+        row4.appendChild(data24)
+         data24.innerText="M"
+
+        
+        let data25=document.createElement("td")
+        row4.appendChild(data25)
+        data25.innerText="jay@gmail.com"
+
+        //row5
+        let row5=document.createElement("tr")
+        table.appendChild(row5)
+
+        let data31=document.createElement("td")
+        row5.appendChild(data31)
+        data31.innerText="4"
+
+        
+        let data32=document.createElement("td")
+        row5.appendChild(data32)
+         data32.innerText="Abhi"
+
+        
+        let data33=document.createElement("td")
+        row5.appendChild(data33)
+        data33.innerText="12345"
+        
+        let data34=document.createElement("td")
+        row5.appendChild(data34)
+         data34.innerText="M"
+
+        
+        let data35=document.createElement("td")
+        row5.appendChild(data35)
+        data35.innerText="abhi@gmail.com"
+ 
+    </script>
+</body>
+</html>
